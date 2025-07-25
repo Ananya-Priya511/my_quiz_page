@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>General Programming Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Title Bar -->
+  <div class="title-bar">
+    <h1>General Programming Quiz</h1>
+  </div>
+
+  <!-- ✅ Homepage Section -->
+  <div id="home" class="home-container">
+    <h2>Welcome to the Quiz!</h2>
+    <p>This quiz will test your general programming knowledge.</p>
+    <p>Total Questions: <span id="total-count"></span></p>
+    <button id="start-btn" class="btn start-btn">Start Quiz</button>
+  </div>
+
+  <!-- Status Bar -->
+  <div class="status-bar" style="display: none;">
+    <div class="status-row">
+      <span id="question-number">Question 1 of 15</span>
+      <span id="live-score">Score: 0</span>
+    </div>
+    <div class="progress-bar">
+      <div id="progress-fill"></div>
+    </div>
+  </div>
+
+  <!-- Quiz Section -->
+  <div id="quiz" class="quiz-container" style="display: none;">
+    <div id="question" class="question">Loading...</div>
+    <div id="answer-buttons" class="btn-container"></div>
+    <div id="feedback" class="feedback"></div>
+    <button id="next-btn" class="btn next-btn">Next</button>
+  </div>
+
+  <!-- Result Section -->
+  <div id="result" class="result-container" style="display: none;">
+    <h2>Quiz Completed!</h2>
+    <p>Your Score: <span id="score"></span> / <span id="total-questions"></span></p>
+    <button id="restart-btn" class="btn restart-btn">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
